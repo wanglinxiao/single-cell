@@ -40,19 +40,19 @@ export PATH=$PATH:/home/wanglinxiao/cellranger-5.0.1/bin
 
 #### （2）单样本，单个测序文库，多个测序管道（lane）
 
-![单样本，单库，多条lane](/Users/wanglinxiao/Desktop/homework/cellranger/images/单样本，单库，多条lane.png)
+![单样本，单库，多条lane](https://github.com/wanglinxiao/single-cell/blob/main/cellranger/images/单样本，单库，多条lane.png)
 
 有时由于一个lane不能放得下一个样本，因此经常会把一个样本放到不同lane上进行测序。细胞定量时指定样本名即可，不需要加lane参数。
 
 #### （3）单样本，多个测序文库，单个测序管道（lane）
 
-![单样本，多库，单条lane](/Users/wanglinxiao/Desktop/homework/cellranger/images/单样本，多库，单条lane.png)
+![单样本，多库，单条lane](https://github.com/wanglinxiao/single-cell/blob/main/cellranger/images/单样本，多库，单条lane.png)
 
 有时，为了技术重复，会对一个样本构建多个测序文库。细胞定量时样本名指定各自文库的样本名，定量后可在进行合并。
 
 #### （4）多样本，多文库，单个测序管道（lane）
 
-![多样本，多库，单条lane](/Users/wanglinxiao/Desktop/homework/cellranger/images/多样本，多库，单条lane.png)
+![多样本，多库，单条lane](https://github.com/wanglinxiao/single-cell/blob/main/cellranger/images/多样本，多库，单条lane.png)
 
 多个样本构建的测序文库放置到一条lane上进行测序。细胞定量时样本名指定各自文库的样本名，定量后可在进行合并。
 
@@ -66,11 +66,11 @@ export PATH=$PATH:/home/wanglinxiao/cellranger-5.0.1/bin
 
 #### 示意流程
 
-![数据拆分-图片1](/Users/wanglinxiao/Desktop/homework/cellranger/images/数据拆分-图片1.png)
+![数据拆分-图片1](https://github.com/wanglinxiao/single-cell/blob/main/cellranger/images/数据拆分-图片1.png)
 
 将两个样本混合在一个flowcell中进行测序，根据样本的各自index将样本分开
 
-![数据拆分-图片2](/Users/wanglinxiao/Desktop/homework/cellranger/images/数据拆分-图片2.png)
+![数据拆分-图片2](https://github.com/wanglinxiao/single-cell/blob/main/cellranger/images/数据拆分-图片1.png)
 
 将一个样本放置于两个flowcell中进行测序，得到样本在不同lane（L001,L002）的测序数据
 
@@ -84,7 +84,7 @@ export PATH=$PATH:/home/wanglinxiao/cellranger-5.0.1/bin
 
 下图是一个samplesheet的简单示例
 
-<img src="/Users/wanglinxiao/Desktop/homework/cellranger/images/数据拆分-samplesheet格式.png" alt="数据拆分-samplesheet格式" style="zoom:50%;" />
+<img src="https://github.com/wanglinxiao/single-cell/blob/main/cellranger/images/数据拆分-samplesheet格式.png" alt="数据拆分-samplesheet格式" style="zoom:50%;" />
 
 ### 三、细胞定量
 
@@ -104,7 +104,7 @@ export PATH=$PATH:/home/wanglinxiao/cellranger-5.0.1/bin
 
 #### 示例
 
-![cellranger count示例](/Users/wanglinxiao/Desktop/homework/cellranger/images/cellranger count示例.png)
+![cellranger count示例](https://github.com/wanglinxiao/single-cell/blob/main/cellranger/images/cellranger%20count示例.png)
 
 #### 重要的输出文件
 
@@ -130,11 +130,11 @@ export PATH=$PATH:/home/wanglinxiao/cellranger-5.0.1/bin
 | --csv    | 需要整合的样本信息，下附有该csv文件的格式                    |
 | --mapped | 将不同样本的定量信息进行整合时，需进行标准化，使得基因在不同细胞间表达量可比 |
 
-<img src="/Users/wanglinxiao/Desktop/homework/cellranger/images/cellranger aggr csv文件格式.png" alt="cellranger aggr csv文件格式" style="zoom:50%;" />
+<img src="https://github.com/wanglinxiao/single-cell/blob/main/cellranger/images/cellranger%20aggr%20csv文件格式.png" alt="cellranger aggr csv文件格式" style="zoom:50%;" />
 
 #### 示例
 
-![cellranger aggr示例](/Users/wanglinxiao/Desktop/homework/cellranger/images/cellranger aggr示例.png)
+![cellranger aggr示例](https://github.com/wanglinxiao/single-cell/blob/main/cellranger/images/cellranger%20aggr示例.png)
 
 #### 重要的输出文件
 
