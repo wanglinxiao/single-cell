@@ -111,7 +111,7 @@ export PATH=$PATH:/home/wanglinxiao/cellranger-5.0.1/bin
 | 输出文件名                | 说明                                                         |
 | ------------------------- | ------------------------------------------------------------ |
 | [web_summary.html](data/web_summary.html)          | 以网页版形式对样本信息的总结，包括测序质量，基因数量以及细胞数目等 |
-| metrics_summary.csv       | 同样是对样本信息的总结，csv格式                              |
+| [metrics_summary.csv](metrics_summary.csv)       | 同样是对样本信息的总结，csv格式                              |
 | filtered_gene_bc_matrices | 是一个目录，存储细胞定量的结果，有三个文件：barcodes.tsv.gz，features.tsv.gz，matrix.mtx.gz。这三个文件是下游分析软件Seurat或Scanpy的输入文件 |
 | raw_feature_bc_matrix     | 也是存储细胞定量结果的目录，但是这里的细胞没有经过过滤，因此一般不用。 |
 | molecule_info.h5          | 下一步定量整合时需要用到的文件                               |
