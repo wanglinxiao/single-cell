@@ -34,7 +34,7 @@ export PATH=$PATH:/home/wanglinxiao/cellranger-5.0.1/bin
 
 #### （1）单样本，单个测序文库，单个测序管道（lane）
 
-![单样本，单库，单条lane](https://github.com/wanglinxiao/single-cell/blob/main/cellranger/images/单样本，单库，单条lane.png)
+![单样本，单库，单条lane](images/单样本，单库，单条lane.png)
 
 一个样本建立了一个测序文库，在将该文库放到一条lane上进行测序。细胞定量时指定样本名称即可
 
