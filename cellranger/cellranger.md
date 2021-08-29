@@ -98,7 +98,7 @@ export PATH=$PATH:/home/wanglinxiao/cellranger-5.0.1/bin
 | -------------- | -------------------------------------------------- |
 | --id           | 输出文件目录的名称                                 |
 | --fastqs       | 输入文件fastq所在的目录名                          |
-| --sample       | 样本名，第一个'_'之前的字符                        |
+| --sample       | 样本名，'_S19_L001_I1_001.fastq.gz'之前的字符                        |
 | --trancriptome | 参考文件所在目录名                                 |
 | --lanes        | 如果只需要分析特定lane的测序数据，可用lane进行指定 |
 
@@ -120,7 +120,7 @@ export PATH=$PATH:/home/wanglinxiao/cellranger-5.0.1/bin
 
 #### 目的
 
-当处理多个生物学样本或一个样本存在多个文库时，应分别对每个文库单独count定量，然后将定量结果aggr起来。
+当一个样本构建了多个文库时，应分别对每个文库单独count定量，然后将定量结果aggr起来。
 
 #### 重要参数
 
